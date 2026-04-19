@@ -25,3 +25,15 @@ graph TD
     style Attacker fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff
     style Target fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff
     style Security_Zone fill:#0d1117,stroke:#58a6ff,stroke-dasharray: 5 5
+---
+
+## 2. Forensic Evidence Archive
+The following technical artifact documents the full lifecycle of the incident: Initial exploitation, log-based detection, process identification (PIDs 4910, 4911, 4913), and the final SIGKILL containment.
+
+### Terminal Logs & Remediation Artifacts
+![Forensic Evidence](./forensic_evidence.jpg)
+
+### Environment Setup
+![Setup](./env_init.jpg)
+
+---
