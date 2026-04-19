@@ -43,16 +43,3 @@ graph TD
     style Attacker fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff
     style Target fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff
     style Security_Zone fill:#0d1117,stroke:#58a6ff,stroke-dasharray: 5 5
-
-
-
-
-    3. Incident Lifecycle Detail
-Detection & Analysis
-Initial telemetry from /var/log/auth.log confirmed the breach. Process auditing identified malicious Netcat listeners (PIDs: 4910, 4911, 4913).
-
-Containment
-Malicious PIDs were terminated using kill -9 to sever the attacker's link.
-
-Command:
-kill -9 4910 4911 4913
