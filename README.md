@@ -3,7 +3,7 @@
 **Classification:** Technical / Internal Use
 
 ## 1. Network Topology & Attack Flow
-The following diagram illustrates the logical relationship and the sequence of the compromise within the isolated environment.
+The following diagram illustrates the logical relationship and the sequence of the compromise.
 
 ```mermaid
 graph TD
