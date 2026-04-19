@@ -43,21 +43,3 @@ graph TD
     style Attacker fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff
     style Target fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff
     style Security_Zone fill:#0d1117,stroke:#58a6ff,stroke-dasharray: 5 5
-
-
-
-## 3. Incident Lifecycle Detail
-
-### Detection & Analysis
-Initial telemetry was gathered by auditing the system authentication logs.
-- **Log Source:** `/var/log/auth.log`
-- **Finding:** Unauthorized root session established via Samba service exploit.
-- **Process Audit:** Used `ps aux` to isolate malicious Netcat listeners.
-- **Identified Threat PIDs:** 4910, 4911, 4913
-
-### Containment & Eradication
-To secure the host and terminate the attacker's remote access, a SIGKILL signal was issued to the identified malicious processes.
-
-**Remediation Command:**
-```bash
-kill -9 4910 4911 4913
