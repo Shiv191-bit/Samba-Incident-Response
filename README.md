@@ -1,3 +1,11 @@
+# Incident Investigation & Containment: CVE-2007-2447
+**Document ID:** IR-LOG-11942
+**Classification:** Technical / Internal Use
+
+## 1. Network Topology & Attack Flow
+The following diagram illustrates the logical relationship and the sequence of the compromise within the isolated environment.
+
+```mermaid
 graph TD
     subgraph Security_Zone [VLAN 64 - Isolated Lab]
         direction TB
