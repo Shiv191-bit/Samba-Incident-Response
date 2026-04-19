@@ -1,7 +1,3 @@
-# Incident Investigation & Containment: CVE-2007-2447
-**Document ID:** IR-LOG-11942
-**Classification:** Technical / Internal Use
-
 ## 1. Network Topology
 The following mapping defines the logical relationship between the internal nodes during the incident.
 
